@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+    --cor1: hsl(185, 75%, 39%);
+    --cor2: hsl(229, 23%, 23%);
+    --cor3: hsl(227, 10%, 46%);
+    --cor4: hsl(0, 0%, 59%);
+}
+
+* {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--cor1);
+    background-image: url("images/bg-pattern-bottom.svg"), url("images/bg-pattern-top.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 45vw 50vh, right 50vw bottom 50vh; 
+    font-family: "Kumbh Sans";
+    font-size: 18px;
+    color: var(--cor2);
+}
+
+main {
+    text-align: center;
+    background-color: white;
+    width: 350px;
+    height: 375px;
+    margin: auto;
+    border-radius: 15px;
+
+    box-shadow: 10px 30px 100px var(--cor3) /* acho que não tem sombra rs mas não posso confimrar.*/
+}
+
+#bg-pattern-card {
+    background: url(images/bg-pattern-card.svg) no-repeat;
+
+    width: 100%;
+    height: 150px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+#pfp {
+    display: block;
+
+    border-radius: 50%;
+    width: 95px;
+    height: 95px;
+    margin: auto;
+
+    margin-top: -65px;
+    margin-bottom: 20px;
+    border: 5px solid white;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+h1::after {
+    content: "\00A0\ 26";
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--cor3);
+}
+
+#city {
+    color: var(--cor4);
+    font-size: 1rem;
+}
+
+section {
+    display: flex;
+}
+
+section > div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nums {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+#names {
+    font-weight: 400;
+    color: var(--cor3);
+    font-size: 0.75rem;
+}
+
+.attribution {
+    text-align: center;
+    font-size: 1rem;
+}
